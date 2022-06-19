@@ -138,12 +138,12 @@ function ci_esp32_build {
     if [ -d $IDF_PATH/components/esp32c3 ]; then
         make ${MAKEOPTS} -C ports/esp32 BOARD=GENERIC_C3
     fi
-    if [ -d $IDF_PATH/components/esp32s2 ]; then
-        make ${MAKEOPTS} -C ports/esp32 BOARD=GENERIC_S2
-    fi
-    if [ -d $IDF_PATH/components/esp32s3 ]; then
-        make ${MAKEOPTS} -C ports/esp32 BOARD=GENERIC_S3
-    fi
+    # if [ -d $IDF_PATH/components/esp32s2 ]; then
+    #     make ${MAKEOPTS} -C ports/esp32 BOARD=GENERIC_S2
+    # fi
+    # if [ -d $IDF_PATH/components/esp32s3 ]; then
+    #     make ${MAKEOPTS} -C ports/esp32 BOARD=GENERIC_S3
+    # fi
 
     # Test building native .mpy with xtensawin architecture.
     ci_native_mpy_modules_build xtensawin
