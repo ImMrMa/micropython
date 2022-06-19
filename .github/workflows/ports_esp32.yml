@@ -25,4 +25,4 @@ jobs:
       uses: actions/upload-artifact@main
       with:
         name: $env.GITHUB_REF
-        path: /home/runner/work/micropython/micropython/ports/esp32/build-GENERIC_C3
+        path: /home/runner/work/micropython/micropython/ports/esp32/build-GENERIC_C3_USB/*.bin

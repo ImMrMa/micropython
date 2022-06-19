@@ -136,7 +136,7 @@ function ci_esp32_build {
         USER_C_MODULES=../../../examples/usercmodule/micropython.cmake \
         FROZEN_MANIFEST=$(pwd)/ports/esp32/boards/manifest_test.py
     if [ -d $IDF_PATH/components/esp32c3 ]; then
-        make ${MAKEOPTS} -C ports/esp32 BOARD=GENERIC_C3
+        make ${MAKEOPTS} -C ports/esp32 BOARD=GENERIC_C3_USB
     fi
     # if [ -d $IDF_PATH/components/esp32s2 ]; then
     #     make ${MAKEOPTS} -C ports/esp32 BOARD=GENERIC_S2
