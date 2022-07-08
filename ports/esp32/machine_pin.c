@@ -133,10 +133,10 @@ STATIC const machine_pin_obj_t machine_pin_obj[] = {
     {{&machine_pin_type}, GPIO_NUM_11},
     {{&machine_pin_type}, GPIO_NUM_12},
     {{&machine_pin_type}, GPIO_NUM_13},
-    {{NULL}, -1}, // 14 FLASH
-    {{NULL}, -1}, // 15 FLASH
-    {{NULL}, -1}, // 16 FLASH
-    {{NULL}, -1}, // 17 FLASH
+    {{&machine_pin_type}, GPIO_NUM_14},
+    {{&machine_pin_type}, GPIO_NUM_15},
+    {{&machine_pin_type}, GPIO_NUM_16},
+    {{&machine_pin_type}, GPIO_NUM_17},
     #if CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG
     {{NULL}, -1}, // 18 is for native USB D-
     {{NULL}, -1}, // 19 is for native USB D+
